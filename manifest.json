@@ -4,20 +4,14 @@
   "version": "1.0",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "action": {
     "default_popup": "popup/index.html",
     "default_icon": "images/icon-128.png"
   },
-  
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "Command+B"
-      }
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
     }
-  }
+  ]
 }
