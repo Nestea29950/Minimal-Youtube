@@ -13,19 +13,15 @@ Actuellement, l'extension permet :
 
 ### 1️⃣ Cloner le dépôt
 
-```bash
 git clone https://github.com/tonpseudo/youtube-sans-distraction.git
 cd youtube-sans-distraction
+
 2️⃣ Installer les dépendances
-bash
-Copier
-Modifier
 npm install
+
 3️⃣ Lancer le build
-bash
-Copier
-Modifier
 npm run build
+
 Les fichiers de l'extension seront générés dans le dossier dist/.
 
 4️⃣ Charger l’extension dans Chrome
@@ -42,27 +38,25 @@ Le projet est structuré autour de modules ES6, et utilise Vite pour bundler tou
 
 Structure :
 
-arduino
-Copier
-Modifier
 .
 ├── dist/
 ├── src/
 │   ├── includes/
-│   │   └── short.js
+│   │   └── short.js etc ...
 │   └── main.js
 ├── manifest.json
 ├── vite.config.js
 └── package.json
+
 🤝 Contribuer
 Les contributions sont les bienvenues !
 Que ce soit pour :
 
 ajouter de nouvelles fonctionnalités
 
-corriger des bugs
+Corriger des bugs
 
-améliorer le code existant
+Améliorer le code existant
 
 traduire l'extension dans d'autres langues
 → toute aide est précieuse.
@@ -84,4 +78,4 @@ Vous pouvez l'utiliser, le modifier et le redistribuer librement.
 
 📬 Contact
 Pour toute question, idée ou suggestion :
-[ton.email@exemple.com]
+[willgaoanarch@hotmail.fr]
