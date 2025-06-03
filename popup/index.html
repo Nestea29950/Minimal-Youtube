@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Minimal Youtube</title>
-    <script src="popup.js"></script>
-  </head>
-  <body>
-    <input type="text" id="optionInput" placeholder="Tape ton option" />
-    <button id="sendOption">Envoyer à la page</button>
-  </body>
+
+<head>
+  <title>Minimal Youtube</title>
+
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="flex flex-col gap-1">
+    <div class="flex items-center">
+      <label class="switch">
+        <input name="shorts" type="checkbox" id="shorts">
+        <span class="knob"></span>
+      </label>
+      <div class="ml-1">
+        Enlever Youtube Shorts
+      </div>
+    </div>
+    <div class="flex items-center">
+      <label class="switch">
+        <input name="commentaires" type="checkbox" id="commentaires">
+        <span class="knob"></span>
+      </label>
+      <div class="ml-1">
+        Enlever Commentaires
+      </div>
+    </div>
+    <div class="flex items-center">
+      <label class="switch">
+        <input name="videos_recommande" type="checkbox" id="recommandes">
+        <span class="knob"></span>
+      </label>
+      <div class="ml-1">
+        Enlever Videos Recommandees
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
 </html>

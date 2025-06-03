@@ -1,1 +1,71 @@
 
+body{
+  width: 250px;
+}
+.flex{
+  display: flex;
+}
+.items-center{
+  align-items: center;
+}
+.ml-1{
+  margin-left: 1em;
+}
+.flex-col{
+  flex-direction: column;
+}
+.gap-1{
+  gap: 1em;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+.switch input[type="checkbox"] {
+ /* display: none;*/
+  -webkit-appearance: none;
+}
+.switch input:checked + .knob {
+  background-color: #FFD700; /* jaune or vif */
+  box-shadow: 
+    0 0 8px 3px #FFD700AA,  /* glow principal */
+    0 0 20px 10px #FFEA0055, /* halo large plus doux */
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.switch input + .knob {
+  transition:all .3s ease-in;
+}
+.switch input + .knob:before {
+  transition:all .3s ease-in;
+}
+
+.switch input:checked + .knob:before {
+  transform: translateX(25px);
+    box-shadow: -10px 0px 44px 0px
+}
+
+.knob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 40px;
+}
+
+.knob:before {
+  position: absolute;
+  background-color: white;
+  content: "";
+  left: 3px;
+  top: 2.5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
