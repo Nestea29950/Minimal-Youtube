@@ -1,12 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  // ------------------Traductions ------------------
+  document.getElementById('hideShorts').innerText = chrome.i18n.getMessage("hideShorts");
+  document.getElementById('hideComments').innerText = chrome.i18n.getMessage("hideComments");
+  document.getElementById('hideRecommended').innerText = chrome.i18n.getMessage("hideRecommended");
+  // ------------------Traductions ------------------
+
+
   const shorts_toggle = document.getElementById('shorts');
   const commentaires_toggle = document.getElementById('commentaires');
   const recommandes_toggle = document.getElementById('recommandes');
 
-  chrome.storage.local.get(['shortsEnabled','commentaireEnabled','recommandeEnabled'], (result) => {
+  chrome.storage.local.get(['shortsEnabled', 'commentaireEnabled', 'recommandesEnabled'], (result) => {
     if (shorts_toggle) shorts_toggle.checked = !!result.shortsEnabled;
     if (commentaires_toggle) commentaires_toggle.checked = !!result.commentaireEnabled;
-    if (recommandes_toggle) recommandes_toggle.checked = !!result.recommandeEnabled;
+    if (recommandes_toggle) recommandes_toggle.checked = !!result.recommandesEnabled;
   });
 
   if (shorts_toggle) {

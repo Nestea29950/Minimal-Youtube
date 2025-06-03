@@ -2,7 +2,8 @@
 export function toggleCommentaireDesktop(hide) {
     const sectionComments = document.getElementById('comments');
     if (sectionComments) {
-        sectionComments.style.display = hide ? 'none' : '';
+    
+        sectionComments.classList.toggle('hide-recommandes', hide);
     }
 }
 

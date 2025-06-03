@@ -1,0 +1,11 @@
+{
+  "hideShorts": {
+    "message": "Masquer les Shorts"
+  },
+  "hideComments": {
+    "message": "Masquer les commentaires"
+  },
+  "hideRecommended": {
+    "message": "Masquer les recommandations"
+  }
+}

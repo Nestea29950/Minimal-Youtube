@@ -3,6 +3,7 @@
   "description": "Contrôlez ce que vous voyez sur YouTube et réduisez les distractions selon vos envies.",
   "version": "1.0",
   "manifest_version": 3,
+  "default_locale": "fr",
   "permissions": [
     "activeTab",
     "scripting",
@@ -20,6 +21,7 @@
     {
       "matches": ["*://www.youtube.com/*"],
       "js": ["dist/content.js"],
+       "css": ["src/style.css"],
       "type": "module",
       "run_at": "document_idle"
     }

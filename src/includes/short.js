@@ -6,7 +6,7 @@ export function toggleShortsSections(hide) {
   sections.forEach(section => {
     const hasShortsLink = section.querySelector('a[href*="/shorts/"]');
     if (hasShortsLink) {
-      section.style.display = hide ? 'none' : '';
+      section.classList.toggle('hide-recommandes', hide);
     }
   });
 }
@@ -15,7 +15,7 @@ export function toggleShortsSections(hide) {
 export function toggleReelShelfRenderer(hide) {
   const reelShelves = document.querySelectorAll('ytd-reel-shelf-renderer');
   reelShelves.forEach(shelf => {
-    shelf.style.display = hide ? 'none' : '';
+    shelf.classList.toggle('hide-recommandes', hide);
   });
 }
 
@@ -23,7 +23,7 @@ export function toggleReelShelfRenderer(hide) {
 export function toggleReelShelf(hide) {
   const sidebarShortsLink = [...document.querySelectorAll('a#endpoint')].find(a => a.title === "Shorts");
   if (sidebarShortsLink) {
-    sidebarShortsLink.style.display = hide ? 'none' : '';
+    sidebarShortsLink.classList.toggle('hide-recommandes', hide);
   }
 }
 
