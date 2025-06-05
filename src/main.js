@@ -42,6 +42,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
 
   if (request.action === "recommandes_toggle") {
+    
     recommandesEnabled = request.hide;
     chrome.storage.local.set({ recommandesEnabled });
     toggleRecommandes(recommandesEnabled);

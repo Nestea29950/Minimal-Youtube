@@ -1,6 +1,6 @@
 {
-  "name": "YouTube Sans Distraction",
-  "description": "Contrôlez ce que vous voyez sur YouTube et réduisez les distractions selon vos envies.",
+  "name": "YouTube Sans Distraction BÊTA",
+  "description": "Contrôlez ce que vous voyez sur YouTube et réduisez les distractions selon vos envies. CETTE EXTENSION EST POUR LES TESTS BÊTA",
   "version": "1.0",
   "manifest_version": 3,
   "default_locale": "fr",
